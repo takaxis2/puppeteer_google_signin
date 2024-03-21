@@ -1,0 +1,56 @@
+//1번쨰 이름, 성
+ 
+//2번쨰 연,월,일 성별
+  /*
+    남 :1
+    여 : 2
+    공개 안함 : 3
+    맞춤 : 4 쓰지않는걸로
+  */
+
+//3번쨰 이메일 선택하기
+  /*
+  id="headingText" 로 판단
+  
+  //*[@id="headingText"]/span
+    1번째 : 이메일 선택
+        - #selectionc2, #selectionc3, #selectionc4(얘가 내 gmail주소 만들기)
+
+    2번째 이메일 주소 생성  
+        - 'input[name="Username"]'
+
+    이메일이 중복일경우를 생각해야함
+  */
+
+//4번째 비밀번호
+  //문자, 숫자, 기호
+ 
+//5번째 보안문자 받기
+
+//6번쨰 코드 입력
+
+//7번쨰 복구이메일
+  /*
+    input[name="recovery"], #recoveryEmailId
+    다음 : #recoveryNext > div > button 
+    건너뛰기 : #view_container > div > div > div.pwWryf.bxPAYd > div > div.zQJV3.F8PBrb > div > div > div:nth-child(2) > div > div > button
+  */
+
+//8번째 계정 정보 검토
+  // 다음 : #next > div > button
+
+//9번쨰 개인정보보호 약관
+  /*
+    google 서비스 약관에 동의함 : #selectioni14
+    개인정보수집 : #selectioni16
+    계정 만들기 버튼 : #yDmH0d > c-wiz > div.aDGQwe.UMxd3c > div.eKnrVb > div > div.Z6Ep7d.UMxd3c > div > div.F9NWFb > div > div > button
+  */
+
+//10번쨰 데이터베이스에 계정정보를 저장
+
+
+- 완전히 새로운 계정을 만들경우 휴대폰 인증이 필수, 이미 계정이 로그인되어 있는 경우는 상정 안함
+- 오류 처리를 안함
+- 반복되는 코드가 많음
+- 노드몬으로 서버가 죽어도 살려야함
+- 4번 5번 사이에 오류가 나타남 -> 너무 자주하면 생기는 문제로 보임, 일정 시간 지나면 작동 됨
